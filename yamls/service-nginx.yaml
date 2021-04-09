@@ -1,0 +1,16 @@
+# ------------------- Jenkins - Service for Development ------------------- #
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  namespace: naco-dev
+spec:
+    type: LoadBalancer
+    ports:
+        - port: 80
+          nodePort: 30091
+          protocol: TCP
+    selector:
+        app: nginx-app
+    externalIPs:
+    - x.x.x.161

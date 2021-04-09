@@ -1,0 +1,14 @@
+# ------------------- BusyBox - Service for Development ------------------- #
+apiVersion: v1
+kind: Service
+metadata:
+  name: busybox-service
+  namespace: naco-dev
+spec:
+    type: NodePort
+    ports:
+        - port: 80
+          nodePort: 30090
+          protocol: TCP
+    selector:
+        app: busybox

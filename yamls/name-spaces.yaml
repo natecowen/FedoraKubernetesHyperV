@@ -1,0 +1,7 @@
+# ------------------- NaCo Development ------------------- #
+"apiVersion": "v1"
+"kind": "Namespace"
+"metadata":
+  "name": "naco-dev"
+  "labels":
+    "name": "naco-dev"
