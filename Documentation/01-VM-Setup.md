@@ -102,7 +102,7 @@ sudo dnf  -y install  iproute-tc git htop
 ### Add Port Rules for  rules to the firewalld
 
 ```shell 
-sudo firewall-cmd --permanent --zone=public --add-port=6643/tcp
+sudo firewall-cmd --permanent --zone=public --add-port=6443/tcp
 sudo firewall-cmd --permanent --zone=public --add-port=2379/tcp
 sudo firewall-cmd --permanent --zone=public --add-port=2380/tcp
 sudo firewall-cmd --permanent --zone=public --add-port=10250/tcp
